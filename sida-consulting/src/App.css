@@ -1,3 +1,21 @@
+/************ Custom Font ************/
+@font-face {
+	font-family: Centra;
+	src: url('./Assets/font/CentraNo2-Bold.ttf');
+	font-weight: 700;
+}
+@font-face {
+	font-family: Centra;
+	src: url('./Assets/font/CentraNo2-Medium.ttf');
+	font-weight: 500;
+}
+@font-face {
+	font-family: Centra;
+	src: url('./Assets/font/CentraNo2-Book.ttf');
+	font-weight: 400;
+}
+
+
 .App {
   text-align: center;
 }
@@ -35,4 +53,53 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+/** Navigation Styling */
+
+nav.navbar {
+  background-color: #b7b7bd;
+  padding: 18px 0;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  z-index: 9999;
+  transition: 0.32s ease-in-out;
+  margin-right: 0px;
+}
+
+nav.navbar a.navbar-brand img{
+  width: 100%;
+  margin-right: 0%;
+}
+
+nav.navbar a.navbar-brand {
+  text-align: left;
+  width: 19%;
+  margin-left: 0px;
+  margin-right: 5%;
+}
+
+nav.navbar .container {
+  width: 100%;
+  margin-left: 0px;
+  margin-right: 0px;
+}
+
+nav.navbar .navbar-nav .nav-link.navbar-link {
+  font-weight: 500;
+  text-wrap: nowrap;
+  text-align: flex;
+  height: 16px;
+  color: #050c85;
+  padding-right: 10px;
+}
+
+nav.navbar #basic-navbar-nav {
+  float: right;
+  text-align: right;
+}
+
+nav.navbar.navbar-expand-md.navbar-light {
+  width: 100%;
 }
