@@ -103,3 +103,43 @@ nav.navbar #basic-navbar-nav {
 nav.navbar.navbar-expand-md.navbar-light {
   width: 100%;
 }
+
+
+/** Banner */
+
+.banner {
+  margin-top: 0;
+  padding: 160px 0 100px 55px;
+  background-image: url("./Assets/img/Home.png");
+  background-repeat: no-repeat;
+}
+
+.banner h2 {
+  text-wrap: nowrap;
+  font-size: 100;
+  font-weight: 400;
+  margin-bottom: 100px;
+}
+.banner h1 {
+  text-align: left;
+  font-size:90px;
+}
+
+.banner a .getInTouch {
+  background-color: #6367ba;
+  border-radius: 5px;
+  text-align: right;
+  font-weight: 600;
+  background-size: cover;
+  height: 45px;
+  padding-left: 20px;
+  padding-right: 20px;
+  margin-top: 60px;
+  margin-left: 800px;
+  border: none;
+}
+
+.banner button:hover {
+  background-color: #050c85;
+  color: aliceblue;
+}
