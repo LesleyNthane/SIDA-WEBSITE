@@ -112,6 +112,13 @@ nav.navbar.navbar-expand-md.navbar-light {
   padding: 160px 0 100px 55px;
   background-image: url("./Assets/img/Home.png");
   background-repeat: no-repeat;
+  background-size: contain;
+  background-size: cover;
+}
+
+.banner .container {
+  height: 100%;
+  width: 100%;
 }
 
 .banner h2 {
@@ -119,27 +126,80 @@ nav.navbar.navbar-expand-md.navbar-light {
   font-size: 100;
   font-weight: 400;
   margin-bottom: 100px;
+  width: 100%;
 }
 .banner h1 {
   text-align: left;
   font-size:90px;
+  width: 100%;
 }
 
-.banner a .getInTouch {
+.banner .getInTouch {
   background-color: #6367ba;
   border-radius: 5px;
   text-align: right;
   font-weight: 600;
   background-size: cover;
   height: 45px;
-  padding-left: 20px;
-  padding-right: 20px;
-  margin-top: 60px;
-  margin-left: 800px;
+  padding-left: 30px;
+  padding-right: 30px;
+  margin-top: 100px;
+  margin-left: 70%;
   border: none;
 }
 
+.banner a {
+  
+}
+
 .banner button:hover {
+  background-color: #050c85;
+  color: aliceblue;
+}
+
+
+/** About */
+
+.about .col-xl-7.col-md-6.col-12 {
+  width: 100%;
+}
+
+.about .title-about {
+  margin-top: 5%;
+}
+
+.about .company-name {
+  float: right;
+  font-weight: 200;
+}
+
+.about .container {
+  display: flex;
+  column-gap: 20px;
+  
+  
+}
+
+.about #container1 p {
+  text-align: justify;
+}
+
+.about .getInTouch {
+  background-color: #6367ba;
+  border-radius: 5px;
+  text-align: right;
+  font-weight: 600;
+  background-size: cover;
+  height: 45px;
+  padding-left: 30px;
+  padding-right: 30px;
+  margin-top: 10px;
+  margin-left: 0px;
+  border: none;
+  float: left;
+}
+
+.about button:hover {
   background-color: #050c85;
   color: aliceblue;
 }
