@@ -160,12 +160,26 @@ nav.navbar.navbar-expand-md.navbar-light {
 
 /** About */
 
+.about {
+  padding-bottom: 10%;
+}
+
+.about #comp-picture.col-lg-6.col-md-12.col-sm-12.col-xs-12 img{
+  width: 100%;
+  background-color:#050c85 ;
+}
+
+.about #aboutContent.col-lg-6.col-md-12.col-sm-12.col-xs-12 {
+  
+}
+
 .about .col-xl-7.col-md-6.col-12 {
   width: 100%;
 }
 
 .about .title-about {
   margin-top: 5%;
+  margin-bottom: 5%;
 }
 
 .about .company-name {
@@ -176,7 +190,6 @@ nav.navbar.navbar-expand-md.navbar-light {
 .about .container {
   display: flex;
   column-gap: 20px;
-  
   
 }
 
@@ -203,3 +216,57 @@ nav.navbar.navbar-expand-md.navbar-light {
   background-color: #050c85;
   color: aliceblue;
 }
+
+#container2 {
+  margin-top: 100px;
+  display: flex;
+}
+
+.vision {
+  width: 100%;
+}
+
+
+/** Services */
+
+.services {
+  background-image: url("./Assets/img/background.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.services .company-name {
+  float: right;
+  font-weight: 200;
+}
+
+.services .title-services {
+  margin-top: 5%;
+  margin-bottom: 5%;
+}
+
+.services .row #services-panels {
+  align-items:start ;
+  width: 75%;
+  margin-left: 15.5%;
+  padding-top: 0px;
+}
+
+.services .panel.panel-default.col-lg-4.col-md-4.col-sm-6.col-xs-12 {
+ 
+ padding-top: 0px;
+}
+
+.services .panel-heading {
+  background-color: #a2a6a3;
+  border-style:groove ;
+  border-color: black;
+  height:60px;
+  margin-top: 0px;
+}
+
+.services .panel-body {
+  text-align: justify;
+  background-color: floralwhite;
+}
+
