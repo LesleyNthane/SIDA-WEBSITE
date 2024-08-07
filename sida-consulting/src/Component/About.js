@@ -38,7 +38,7 @@ export const About = () => {
                         </div>
                     </div>
                     <div className="row" id="container2">
-                        <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 vision">
+                        <div class="col-lg-6 col-md-12 col-sm-12 col-xs-12 vision">
                             <h5 class="vision-heading">Vision</h5>
                             <p class="vision-p1">
                                 We aim to partner with related Government Organizations, Private Sectors ​and Corporate 
@@ -49,7 +49,7 @@ export const About = () => {
                                 transfer skills to upcoming graduates / aspiring ​individuals within our spectrum.
                             </p>
                         </div>
-                        <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 mission">
+                        <div class="col-lg-6 col-md-12 col-sm-12 col-xs-12 mission">
                             <h5 class="mission-heading">Mission</h5>
                             <p class="mission-p1">
                                 We want to appoint specialised professionals for various projects and in every project; we ​will 

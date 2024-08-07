@@ -162,6 +162,7 @@ nav.navbar.navbar-expand-md.navbar-light {
 
 .about {
   padding-bottom: 10%;
+  
 }
 
 .about #comp-picture.col-lg-6.col-md-12.col-sm-12.col-xs-12 img{
@@ -250,6 +251,7 @@ nav.navbar.navbar-expand-md.navbar-light {
   width: 75%;
   margin-left: 15.5%;
   padding-top: 0px;
+  margin-bottom: 10%;
 }
 
 .services .panel.panel-default.col-lg-4.col-md-4.col-sm-6.col-xs-12 {
@@ -270,3 +272,47 @@ nav.navbar.navbar-expand-md.navbar-light {
   background-color: floralwhite;
 }
 
+
+/** Associates */
+
+.associates {
+  background-color: white;
+}
+
+.associates .container {
+  align-items: center;
+}
+
+.associates .company-name{
+  float: right;
+  font-weight: 200;
+}
+
+
+.associates .title-associates {
+  margin-top: 5%;
+  margin-bottom: 5%;
+}
+
+.associates #cont1 {
+  margin-bottom: 8%;
+}
+
+.associates .director-tittle.col-1{
+  font-weight: 500;
+  font-size: 180%;
+}
+
+.associates .partner-h {
+  font-size: 170%
+}
+
+.associates #about-director {
+  text-align: justify;
+  font-size: 170%
+}
+
+.associates .partner-p1 {
+  text-align: justify;
+  font-size: 180%
+}

@@ -1,6 +1,14 @@
 import { Col, Row } from "react-bootstrap"
+import $ from 'jquery';
 
 export const Service = () => {
+
+    $(document).ready(function() {
+        $(".panel").click(function() {
+            $(".panel-body").toggleClass("read");
+        });
+    });
+
     return (
         <section className="services" id="services">
             <Row className="align-item-center">
