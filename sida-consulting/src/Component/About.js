@@ -34,7 +34,7 @@ export const About = () => {
                                 the ​market. It is therefore important to rely on experts to handle this important task; 
                                 this ​is where <b>SIDA Consulting and Project Management</b> become instrumental.
                             </p>
-                            <a href="#contact"><button class="getInTouch">Get In Touch</button></a>
+                            <a href="#contact-form"><button class="getInTouch">Get In Touch</button></a>
                         </div>
                     </div>
                     <div className="row" id="container2">

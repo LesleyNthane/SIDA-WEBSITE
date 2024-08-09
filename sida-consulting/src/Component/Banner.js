@@ -10,7 +10,7 @@ export const Banner = () => {
                         <h1 class="slogan">THE ULTIMATE <br />​SYNERGY OF <br />​ENGINE​ERS</h1>
                     </Col>
                 </Row>
-                <a href="#contact"><button class="getInTouch">Get In Touch</button></a>
+                <a href="#contact-form"><button class="getInTouch">Get In Touch</button></a>
             </Container>
         </section>
     )
