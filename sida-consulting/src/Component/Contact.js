@@ -1,6 +1,6 @@
-import phoneicon from "../Assets/img/icons8-phone-50.png";
-import emailicon from "../Assets/img/icons8-email-50.png";
-import officeicon from "../Assets/img/icons8-office-50.png";
+import phoneicon from "../Assets/img/icons8-phone-30.png";
+import emailicon from "../Assets/img/icons8-email-30.png";
+import officeicon from "../Assets/img/icons8-office-30.png";
 import logo from '../Assets/img/SIDA-LOGO.png';
 
 export const Contact = () => {
@@ -9,8 +9,8 @@ export const Contact = () => {
             <h4 class="company-name">SIDA CONSULTING & PROJECT MANAGEMENT</h4>
             <h1 class="title-contact col-4">Contact Us</h1>
             <img src="" alt="company-pc" />
-            <h4 class="Contact-form col-4" id="contact-form">CONTACT FORM</h4>
-            <div className="row">
+            <h4 class="Contact-form col-4" id="contact-form">CONTACT FORM<hr /></h4>
+            <div className="row" id="input-boxes">
                 <div className="col-xs-12 col-sm-6 col-md-6 col-lg-6 input-box">
                     <label className="col-1">Full Name</label><br />
                     <input type="text" className="col-12 field" placeholder="Enter your name" required />
@@ -56,7 +56,7 @@ export const Contact = () => {
                     <img src={logo} alt="logo" />
                 </div>
                 <p className="copyrights">Copy rights reserved. Designed & Developed by L Nthane 2024</p>
-                <div className="col-12">
+                <div className="col-12 bottomn">
                     <p>SIDA CONSULTING AND PROJECT MANAGEMENT (PTY) LTD 2012/017803/07</p>
                 </div>
             </div>

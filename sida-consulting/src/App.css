@@ -316,3 +316,74 @@ nav.navbar.navbar-expand-md.navbar-light {
   text-align: justify;
   font-size: 180%
 }
+
+/** Contact */
+.contact {
+  background-image: url("./Assets/img/background.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.contact .company-name{
+  float: right;
+  font-weight: 200;
+}
+
+.title-contact {
+  margin-top: 5%;
+  margin-bottom: 5%;
+  align-items: center;
+}
+
+.contact .input-box {
+  margin-bottom: 5%;
+}
+
+.contact #input-boxes {
+  width: 90%;
+  margin-left: 5%;
+  align-items:flex-start;
+  margin-bottom: 5%;
+}
+
+.contact #input-boxes label {
+  float: left;
+  text-wrap: nowrap;
+}
+
+.contact .field {
+  width: 80%;
+  float: left;
+}
+
+.contact button {
+  background-color: #c455c9;
+  border-radius: 15px;
+  margin-left: 2%;
+  height: 50px;
+  
+}
+
+.contact .row .col-3 img {
+  width: 100%;
+}
+
+.contact .copyrights{
+  float: right;
+  text-align: right;
+  font-size: x-small;
+}
+
+.contact .bottomn {
+  background-color: #7f8edd;
+  text-align: center;
+  align-items:center;
+  text-wrap: nowrap;
+  color: white;
+  letter-spacing: 8px;
+}
+
+.contact .bottomn p{
+  align-items:end;
+  width: 100%;
+}
