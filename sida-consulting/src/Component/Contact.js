@@ -11,19 +11,19 @@ export const Contact = () => {
             <img src="" alt="company-pc" />
             <h4 class="Contact-form col-4" id="contact-form">CONTACT FORM<hr /></h4>
             <div className="row" id="input-boxes">
-                <div className="col-xs-12 col-sm-6 col-md-6 col-lg-6 input-box">
+                <div className="col-xs-12 col-sm-12 col-md-6 col-lg-6 input-box">
                     <label className="col-1">Full Name</label><br />
                     <input type="text" className="col-12 field" placeholder="Enter your name" required />
                 </div>
-                <div className="col-xs-12 col-sm-6 col-md-6 col-lg-6 input-box">
+                <div className="col-xs-12 col-sm-12 col-md-6 col-lg-6 input-box">
                     <label className="col-1">Phone Number</label><br />
                     <input type="number" className="col-12 field" placeholder="Enter your number" required />
                 </div>
-                <div className="col-xs-12 col-sm-6 col-md-6 col-lg-6 input-box">
+                <div className="col-xs-12 col-sm-12 col-md-6 col-lg-6 input-box">
                     <label className="col-1">Email</label><br />
                     <input type="email" className="col-12 field" placeholder="Enter your email" required />
                 </div>
-                <div className="col-xs-12 col-sm-6 col-md-6 col-lg-6 input-box">
+                <div className="col-xs-12 col-sm-12 col-md-6 col-lg-6 input-box">
                     <label className="col-1">Message</label><br />
                     <textarea name="" id="" className="col-12 field message" placeholder="Enter your message" required />
                 </div>
