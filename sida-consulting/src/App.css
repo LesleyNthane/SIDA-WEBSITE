@@ -251,12 +251,13 @@ nav.navbar.navbar-expand-md.navbar-light {
   width: 75%;
   margin-left: 15.5%;
   padding-top: 0px;
-  margin-bottom: 80%;
+  margin-bottom: 2%;
 }
 
-.services .panel.panel-default.col-lg-4.col-md-4.col-sm-6.col-xs-12 {
+.services .panel-default {
  
  padding-top: 0px;
+ margin-bottom: 4%;
 }
 
 .services .panel-heading {
@@ -354,6 +355,9 @@ nav.navbar.navbar-expand-md.navbar-light {
 .contact .field {
   width: 80%;
   float: left;
+  height: 50px;
+  border: black;
+  border-style: groove;
 }
 
 .contact button {
