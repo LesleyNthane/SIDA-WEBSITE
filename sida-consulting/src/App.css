@@ -137,7 +137,7 @@ nav.navbar.navbar-expand-md.navbar-light {
 .banner .getInTouch {
   background-color: #6367ba;
   border-radius: 5px;
-  text-align: right;
+  text-align: center;
   font-weight: 600;
   background-size: cover;
   height: 45px;
@@ -146,6 +146,8 @@ nav.navbar.navbar-expand-md.navbar-light {
   margin-top: 100px;
   margin-left: 70%;
   border: none;
+  text-wrap: nowrap;
+  color: aliceblue;
 }
 
 .banner a {
@@ -154,7 +156,6 @@ nav.navbar.navbar-expand-md.navbar-light {
 
 .banner button:hover {
   background-color: #050c85;
-  color: aliceblue;
 }
 
 
@@ -171,6 +172,7 @@ nav.navbar.navbar-expand-md.navbar-light {
 
 .about #aboutContent p {
   width: 95%;
+  font-size: 120%;
   
 }
 
@@ -225,8 +227,12 @@ nav.navbar.navbar-expand-md.navbar-light {
 
 .vision {
   width: 100%;
+  font-size: 120%;
 }
 
+.mission {
+  font-size: 120%;
+}
 
 /** Services */
 
