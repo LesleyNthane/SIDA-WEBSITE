@@ -110,7 +110,7 @@ nav.navbar.navbar-expand-md.navbar-light {
 .banner {
   margin-top: 0;
   padding: 160px 0 100px 55px;
-  background-image: url("./Assets/img/Home.png");
+  background-image: url("./Assets/img/Sida-pic2.jpg");
   background-repeat: no-repeat;
   background-size: contain;
   background-size: cover;
@@ -127,11 +127,13 @@ nav.navbar.navbar-expand-md.navbar-light {
   font-weight: 400;
   margin-bottom: 100px;
   width: 100%;
+  color:#050c85;
 }
 .banner h1 {
   text-align: left;
   font-size:90px;
   width: 100%;
+  color: #000000;
 }
 
 .banner .getInTouch {
@@ -213,6 +215,7 @@ nav.navbar.navbar-expand-md.navbar-light {
   margin-left: 0px;
   border: none;
   float: left;
+  color: aliceblue;
 }
 
 .about button:hover {
@@ -223,6 +226,8 @@ nav.navbar.navbar-expand-md.navbar-light {
 #container2 {
   margin-top: 100px;
   display: flex;
+  margin-left: 2%;
+  margin-right: 1%;
 }
 
 .vision {
@@ -230,8 +235,16 @@ nav.navbar.navbar-expand-md.navbar-light {
   font-size: 120%;
 }
 
+.vision p {
+  text-align: justify;
+}
+
 .mission {
   font-size: 120%;
+}
+
+.mission p {
+  text-align: justify;
 }
 
 /** Services */
@@ -261,7 +274,7 @@ nav.navbar.navbar-expand-md.navbar-light {
 }
 
 .services .panel-default {
- 
+ position: relative;
  padding-top: 0px;
  margin-bottom: 4%;
 }
@@ -272,11 +285,14 @@ nav.navbar.navbar-expand-md.navbar-light {
   border-color: black;
   height:60px;
   margin-top: 0px;
+  cursor: pointer;
 }
 
 .services .panel-body {
   text-align: justify;
   background-color: floralwhite;
+  transition: max-height 0.3s ease-in-out, padding 0.3s ease-in-out;
+  overflow: hidden;
 }
 
 
@@ -321,7 +337,7 @@ nav.navbar.navbar-expand-md.navbar-light {
 
 .associates .partner-p1 {
   text-align: justify;
-  font-size: 180%
+  
 }
 
 /** Contact */
@@ -366,12 +382,20 @@ nav.navbar.navbar-expand-md.navbar-light {
   border-style: groove;
 }
 
+.contact #text-area1 {
+  margin-bottom: 0px;
+}
+
 .contact button {
-  background-color: #c455c9;
+  background-color: #6367ba;
+  color: aliceblue;
   border-radius: 15px;
   margin-left: 2%;
   height: 50px;
-  
+}
+
+.contact button:hover {
+  background-color:#050c85;
 }
 
 .contact .row .col-3 img {
