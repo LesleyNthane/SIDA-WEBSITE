@@ -37,7 +37,7 @@ export const Contact = () => {
                 </div>
                 <button type="Submit" className="col-4">Submit</button>
             </div>
-            <div className="row">
+            <div className="row" id="bottom-div">
                 <div className="col-xs-4 col-sm-4 col-md-4 col-lg-4">
                     <img src={ phoneicon } alt="phone-icon" />
                     <label>PHONE</label>

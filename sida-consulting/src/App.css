@@ -15,6 +15,12 @@
 	font-weight: 400;
 }
 
+@media (min-width:1700px) {
+	main .container {
+		max-width: 100%;
+		padding: 0 150px;
+	}
+}
 
 .App {
   text-align: center;
@@ -142,18 +148,20 @@ nav.navbar.navbar-expand-md.navbar-light {
   text-align: center;
   font-weight: 600;
   background-size: cover;
-  height: 45px;
-  padding-left: 30px;
-  padding-right: 30px;
-  margin-top: 100px;
-  margin-left: 70%;
+  margin-top: 22px;
+  float: right;
   border: none;
   text-wrap: nowrap;
   color: aliceblue;
 }
 
 .banner a {
-  
+  margin-bottom: 44px;
+}
+
+.banner button {
+  width: 255px;
+  height: 75px;
 }
 
 .banner button:hover {
@@ -205,17 +213,17 @@ nav.navbar.navbar-expand-md.navbar-light {
 .about .getInTouch {
   background-color: #6367ba;
   border-radius: 5px;
-  text-align: right;
   font-weight: 600;
   background-size: cover;
-  height: 45px;
-  padding-left: 30px;
-  padding-right: 30px;
-  margin-top: 10px;
-  margin-left: 0px;
   border: none;
   float: left;
   color: aliceblue;
+}
+
+.about button {
+  text-align: center;
+  width: 255px;
+  height: 55px;
 }
 
 .about button:hover {
@@ -332,7 +340,7 @@ nav.navbar.navbar-expand-md.navbar-light {
 
 .associates #about-director {
   text-align: justify;
-  font-size: 170%
+  font-size: 160%
 }
 
 .associates .partner-p1 {
@@ -412,11 +420,23 @@ nav.navbar.navbar-expand-md.navbar-light {
   background-color: #7f8edd;
   text-align: center;
   align-items:center;
-  
+  font-size: 100%;
   color: white;
   letter-spacing: 15px;
 }
 
 .contact .bottomn p{
   width: 100%;
+}
+
+.contact .pics img{
+  height: 100%;
+}
+
+.contact .pics {
+  height: 50%;
+}
+
+.contact #bottom-div {
+  background-color: white;
 }
