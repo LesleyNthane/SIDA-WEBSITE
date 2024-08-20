@@ -22,8 +22,13 @@
 	}
 }
 
+#root {
+  width: 100%;
+}
+
 .App {
   text-align: center;
+  width: 100%;
 }
 
 .App-logo {
@@ -99,6 +104,7 @@ nav.navbar .navbar-nav .nav-link.navbar-link {
   height: 16px;
   color: #050c85;
   padding-right: 10px;
+  float: right;
 }
 
 nav.navbar #basic-navbar-nav {
@@ -118,7 +124,6 @@ nav.navbar.navbar-expand-md.navbar-light {
   padding: 160px 0 100px 55px;
   background-image: url("./Assets/img/Sida-pic2.jpg");
   background-repeat: no-repeat;
-  background-size: contain;
   background-size: cover;
 }
 
@@ -128,8 +133,9 @@ nav.navbar.navbar-expand-md.navbar-light {
 }
 
 .banner h2 {
-  text-wrap: nowrap;
-  font-size: 100;
+  float: left;
+  text-align: left;
+  font-size: 110%;
   font-weight: 400;
   margin-bottom: 100px;
   width: 100%;
@@ -137,9 +143,9 @@ nav.navbar.navbar-expand-md.navbar-light {
 }
 .banner h1 {
   text-align: left;
-  font-size:90px;
-  width: 100%;
+  font-size: 350%;
   color: #000000;
+  margin-bottom: 100px;
 }
 
 .banner .getInTouch {
@@ -180,7 +186,10 @@ nav.navbar.navbar-expand-md.navbar-light {
   width: 90%;
 }
 
+.about #aboutContent {}
+
 .about #aboutContent p {
+  margin-left: 2%;
   width: 95%;
   font-size: 120%;
   
@@ -422,14 +431,19 @@ nav.navbar.navbar-expand-md.navbar-light {
   align-items:center;
   font-size: 100%;
   color: white;
-  letter-spacing: 15px;
+  letter-spacing: 1px;
 }
 
 .contact .bottomn p{
   width: 100%;
 }
 
+.contact .pics {
+  height: 100%;
+}
+
 .contact .pics img{
+  
   height: 100%;
 }
 
@@ -439,4 +453,8 @@ nav.navbar.navbar-expand-md.navbar-light {
 
 .contact #bottom-div {
   background-color: white;
+}
+
+.contact .info1 {
+  font-size: 70%;
 }
