@@ -1,0 +1,476 @@
+/************ Custom Font ************/
+@font-face {
+	font-family: Centra;
+	src: url('./Assets/font/CentraNo2-Bold.ttf');
+	font-weight: 700;
+}
+@font-face {
+	font-family: Centra;
+	src: url('./Assets/font/CentraNo2-Medium.ttf');
+	font-weight: 500;
+}
+@font-face {
+	font-family: Centra;
+	src: url('./Assets/font/CentraNo2-Book.ttf');
+	font-weight: 400;
+}
+
+@media (min-width:1700px) {
+	main .container {
+		max-width: 100%;
+		padding: 0 150px;
+	}
+}
+
+#root {
+  width: 100%;
+}
+
+.App {
+  text-align: center;
+  width: 100%;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/** Navigation Styling */
+
+nav.navbar {
+  background-color: #b7b7bd;
+  padding: 18px 0;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  z-index: 9999;
+  transition: 0.32s ease-in-out;
+  margin-right: 0px;
+}
+
+nav.navbar a.navbar-brand img{
+  width: 100%;
+  margin-right: 0%;
+}
+
+nav.navbar a.navbar-brand {
+  text-align: left;
+  width: 19%;
+  margin-left: 0px;
+  margin-right: 5%;
+}
+
+
+
+nav.navbar .navbar-toggler.collapsed {
+  margin-right: 1%;
+}
+
+nav.navbar .container {
+  width: 100%;
+  margin-left: 0px;
+  margin-right: 0px;
+}
+
+nav.navbar .navbar-nav .nav-link.navbar-link {
+  font-weight: 500;
+  text-wrap: nowrap;
+  text-align: flex;
+  height: 16px;
+  color: #050c85;
+  padding-right: 10px;
+  float: right;
+}
+
+nav.navbar #basic-navbar-nav {
+  float: right;
+  text-align: right;
+}
+
+nav.navbar.navbar-expand-md.navbar-light {
+  width: 100%;
+}
+
+
+/** Banner */
+
+.banner {
+  margin-top: 0;
+  padding: 160px 0 100px 55px;
+  background-image: url("./Assets/img/Sida-pic2.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.banner .animate__animatedanimate__zoomIn {
+  animation-duration: 2s;
+}
+
+.banner .container {
+  height: 100%;
+  width: 100%;
+}
+
+.banner h2 {
+  float: left;
+  text-align: left;
+  font-size: 110%;
+  font-weight: 400;
+  margin-bottom: 100px;
+  width: 100%;
+  color:#050c85;
+}
+.banner h1 {
+  text-align: left;
+  font-size: 350%;
+  color: #000000;
+  margin-bottom: 100px;
+}
+
+.banner .getInTouch {
+  background-color: #6367ba;
+  border-radius: 5px;
+  text-align: center;
+  font-weight: 600;
+  background-size: cover;
+  margin-top: 22px;
+  float: right;
+  border: none;
+  text-wrap: nowrap;
+  color: aliceblue;
+}
+
+.banner a {
+  margin-bottom: 44px;
+}
+
+.banner button {
+  width: 255px;
+  height: 75px;
+}
+
+.banner button:hover {
+  background-color: #050c85;
+}
+
+
+/** About */
+
+.about {
+  padding-bottom: 10%;
+  
+}
+
+.about #conp-picture img{
+  width: 90%;
+}
+
+.about #aboutContent {}
+
+.about #aboutContent p {
+  margin-left: 2%;
+  width: 95%;
+  font-size: 120%;
+  
+}
+
+.about .col-xl-7.col-md-6.col-12 {
+  width: 100%;
+}
+
+.about .title-about {
+  margin-top: 5%;
+  margin-bottom: 2%;
+}
+
+.about .company-name {
+  float: right;
+  font-weight: 200;
+}
+
+.about .container {
+  display: flex;
+  column-gap: 20px;
+  
+}
+
+.about #container1 p {
+  margin-top: 1px;
+  text-align: justify;
+}
+
+.about .getInTouch {
+  background-color: #6367ba;
+  border-radius: 5px;
+  font-weight: 600;
+  background-size: cover;
+  border: none;
+  float: left;
+  color: aliceblue;
+}
+
+.about button {
+  text-align: center;
+  width: 255px;
+  height: 55px;
+}
+
+.about button:hover {
+  background-color: #050c85;
+  color: aliceblue;
+}
+
+#container2 {
+  margin-top: 100px;
+  display: flex;
+  margin-left: 2%;
+  margin-right: 1%;
+}
+
+.vision {
+  width: 100%;
+  font-size: 120%;
+}
+
+.vision p {
+  text-align: justify;
+}
+
+.mission {
+  font-size: 120%;
+}
+
+.mission p {
+  text-align: justify;
+}
+
+/** Services */
+
+.services {
+  background-image: url("./Assets/img/background.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.services .company-name {
+  float: right;
+  font-weight: 200;
+}
+
+.services .title-services {
+  margin-top: 5%;
+  margin-bottom: 5%;
+}
+
+.services .row #services-panels {
+  align-items:start ;
+  width: 75%;
+  margin-left: 15.5%;
+  padding-top: 0px;
+  margin-bottom: 2%;
+}
+
+.services .panel-default {
+ position: relative;
+ padding-top: 0px;
+ margin-bottom: 4%;
+ transition: max-height 5s ease-in-out, opacity 5s ease-in-out;
+ animation-duration: 2s;
+}
+
+.services .panel-heading {
+  background-color: #a2a6a3;
+  border-style:groove ;
+  border-color: black;
+  height:60px;
+  margin-top: 0px;
+  cursor: pointer;
+}
+
+.services .panel-body {
+  text-align: justify;
+  background-color: floralwhite;
+  transition: max-height 15s ease-in-out, opacity 1.5s ease-in-out;
+  overflow: hidden;
+  animation-duration: 2s;
+}
+
+
+/** Associates */
+
+.associates {
+  background-color: white;
+}
+
+.associates .container {
+  align-items: center;
+}
+
+.associates .company-name{
+  float: right;
+  font-weight: 200;
+}
+
+
+.associates .title-associates {
+  margin-top: 5%;
+  margin-bottom: 5%;
+}
+
+.associates #cont1 {
+  margin-bottom: 8%;
+}
+
+.associates .director-tittle.col-1{
+  font-weight: 500;
+  font-size: 180%;
+}
+
+.associates .partner-h {
+  font-size: 170%
+}
+
+.associates #about-director {
+  text-align: justify;
+  font-size: 160%
+}
+
+.associates .partner-p1 {
+  text-align: justify;
+  
+}
+
+/** Contact */
+.contact {
+  background-image: url("./Assets/img/background.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.contact .company-name{
+  float: right;
+  font-weight: 200;
+}
+
+.title-contact {
+  margin-top: 5%;
+  margin-bottom: 5%;
+  align-items: center;
+}
+
+.contact .input-box {
+  margin-bottom: 5%;
+}
+
+.contact #input-boxes {
+  width: 90%;
+  margin-left: 5%;
+  align-items:flex-start;
+  margin-bottom: 5%;
+}
+
+.contact #input-boxes label {
+  float: left;
+  text-wrap: nowrap;
+}
+
+.contact .field {
+  width: 80%;
+  float: left;
+  height: 50px;
+  border: black;
+  border-style: groove;
+}
+
+.contact #text-area1 {
+  margin-bottom: 0px;
+}
+
+.contact button {
+  background-color: #6367ba;
+  color: aliceblue;
+  border-radius: 15px;
+  margin-left: 2%;
+  height: 50px;
+  position:inherit;
+}
+
+.contact button:hover {
+  background-color:#050c85;
+}
+
+.contact .row .col-3 img {
+  width: 100%;
+}
+
+.contact .copyrights{
+  float: right;
+  text-align: right;
+  font-size: x-small;
+}
+
+.contact .bottomn {
+  background-color: #7f8edd;
+  text-align: center;
+  align-items:center;
+  font-size: 100%;
+  color: white;
+  letter-spacing: 0.79vw;
+}
+
+.contact .bottomn p{
+  width: 100%;
+}
+
+.contact .pics {
+  height: 100%;
+}
+
+.contact .pics img{
+  border:transparent;
+  border-style: double;
+  height: 100%;
+}
+
+.contact .pics {
+  height: 50%;
+}
+
+.contact #bottom-div {
+  background-color: white;
+}
+
+.contact .info1 {
+  font-size: 70%;
+}
