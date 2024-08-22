@@ -1,5 +1,8 @@
 import { Col, Row } from "react-bootstrap";
 import compServices from "../Assets/img/SIDA-SERVICES.png";
+import 'animate.css';
+import TrackVisibility from "react-on-screen";
+
 
 export const About = () => {
     return (
@@ -9,10 +12,15 @@ export const About = () => {
                     <h4 class="company-name">SIDA CONSULTING & PROJECT MANAGEMENT</h4>
                     <h1 class="title-about">About Us</h1>
                     <div className="row" id="container1">
-                        <div class="col-lg-6 col-md-12 col-sm-12 col-xs-12" id="conp-picture">
-                            <img src={compServices} alt="company's services picture" />
+                        <div class="col-lg-6 col-md-12 col-sm-12 col-xs-12">
+                            <TrackVisibility >
+                                {({ isVisible }) =>
+                                    <div className={isVisible ? "animate__animated animate__fadeInLeftBig" : ""} id="conp-picture">
+                                        <img src={compServices} alt="company's services picture" />
+                                    </div>}
+                            </TrackVisibility>
                         </div>
-                        <div class="col-lg-6 col-md-12 col-sm-12 col-xs-12" id="aboutContent">
+                        <div class="col-lg-6 col-md-12 col-sm-12 col-xs-12"  id="aboutContent">
                             <p><b>SIDA Consulting and Project Management</b> is a wholly black owned company ​established in 
                                 2012, our company comprises itself of highly skilled, professional and ​qualified 
                                 consultants and engineers.

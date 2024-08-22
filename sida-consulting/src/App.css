@@ -91,6 +91,12 @@ nav.navbar a.navbar-brand {
   margin-right: 5%;
 }
 
+
+
+nav.navbar .navbar-toggler.collapsed {
+  margin-right: 1%;
+}
+
 nav.navbar .container {
   width: 100%;
   margin-left: 0px;
@@ -125,6 +131,10 @@ nav.navbar.navbar-expand-md.navbar-light {
   background-image: url("./Assets/img/Sida-pic2.jpg");
   background-repeat: no-repeat;
   background-size: cover;
+}
+
+.banner .animate__animatedanimate__zoomIn {
+  animation-duration: 2s;
 }
 
 .banner .container {
@@ -201,7 +211,7 @@ nav.navbar.navbar-expand-md.navbar-light {
 
 .about .title-about {
   margin-top: 5%;
-  margin-bottom: 5%;
+  margin-bottom: 2%;
 }
 
 .about .company-name {
@@ -216,6 +226,7 @@ nav.navbar.navbar-expand-md.navbar-light {
 }
 
 .about #container1 p {
+  margin-top: 1px;
   text-align: justify;
 }
 
@@ -294,6 +305,8 @@ nav.navbar.navbar-expand-md.navbar-light {
  position: relative;
  padding-top: 0px;
  margin-bottom: 4%;
+ transition: max-height 5s ease-in-out, opacity 5s ease-in-out;
+ animation-duration: 2s;
 }
 
 .services .panel-heading {
@@ -308,8 +321,9 @@ nav.navbar.navbar-expand-md.navbar-light {
 .services .panel-body {
   text-align: justify;
   background-color: floralwhite;
-  transition: max-height 0.3s ease-in-out, padding 0.3s ease-in-out;
+  transition: max-height 15s ease-in-out, opacity 1.5s ease-in-out;
   overflow: hidden;
+  animation-duration: 2s;
 }
 
 
@@ -409,6 +423,7 @@ nav.navbar.navbar-expand-md.navbar-light {
   border-radius: 15px;
   margin-left: 2%;
   height: 50px;
+  position:inherit;
 }
 
 .contact button:hover {
@@ -431,7 +446,7 @@ nav.navbar.navbar-expand-md.navbar-light {
   align-items:center;
   font-size: 100%;
   color: white;
-  letter-spacing: 1px;
+  letter-spacing: 0.79vw;
 }
 
 .contact .bottomn p{
@@ -443,7 +458,8 @@ nav.navbar.navbar-expand-md.navbar-light {
 }
 
 .contact .pics img{
-  
+  border:transparent;
+  border-style: double;
   height: 100%;
 }
 
