@@ -482,3 +482,13 @@ nav.navbar.navbar-expand-md.navbar-light {
 .contact .info1 {
   font-size: 70%;
 }
+
+.contact p.success {
+  color: green;
+  text-align: left;
+}
+
+.contact p.danger {
+  color: red;
+  text-align: left;
+}
