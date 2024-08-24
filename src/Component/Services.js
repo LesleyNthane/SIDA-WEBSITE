@@ -28,9 +28,9 @@ export const Service = () => {
                     <h1 class="title-services">Our Services</h1>
                     <div className="row" id="services-panels">
                         {/** Panel 1 */}
-                        <div class="panel panel-default col-lg-4 col-md-6 col-sm-12 col-xs-12">
+                        <div class="panel panel-default col-lg-4 col-md-6 col-sm-12 col-xs-12" id="panel1">
                             <div class="panel-heading" onClick={() => togglePanel(1)}>PROJECT MANAGEMENT ​AND CO-ORDINATION</div>
-                            {visiblePanels[1] && ( <div class="panel-body">
+                            {visiblePanels[1] && ( <div class="panel-body" id="panel-body1">
                                 <ul>
                                     <li>Projects Facilitation</li>
                                     <li>Project Control</li>
@@ -42,9 +42,9 @@ export const Service = () => {
                         </div>
                     
                         {/** Panel 2 */}
-                        <div class="panel panel-default col-lg-4 col-md-6 col-sm-12 col-xs-12">
+                        <div class="panel panel-default col-lg-4 col-md-6 col-sm-12 col-xs-12" id="panel2">
                             <div class="panel-heading" onClick={() => togglePanel(2)}>ENGINEERING SERVICES</div>
-                            {visiblePanels[2] && ( <div class="panel-body">
+                            {visiblePanels[2] && ( <div class="panel-body" id="panel-body2">
                                 <ul>
                                     <li>Civil Engineering</li>
                                     <li>Structural Engineering</li>
@@ -54,9 +54,9 @@ export const Service = () => {
                             </div>)}
                         </div>
                         {/** Panel 3 */}
-                        <div class="panel panel-default col-lg-4 col-md-6 col-sm-12 col-xs-12">
+                        <div class="panel panel-default col-lg-4 col-md-6 col-sm-12 col-xs-12" id="panel3">
                             <div class="panel-heading" onClick={() => togglePanel(3)}>GEOTECHNICAL ​ENGINEERING</div>
-                            {visiblePanels[3] && ( <div class="panel-body">
+                            {visiblePanels[3] && ( <div class="panel-body" id="panel-body3">
                                 <ul>
                                     <li>Geotechnical Site ​Investigations</li>
                                     <li>Geological Moping</li>
@@ -65,9 +65,9 @@ export const Service = () => {
                             </div>)}
                         </div>
                         {/** Panel 4 */}
-                        <div class="panel panel-default col-lg-4 col-md-6 col-sm-12 col-xs-12">
+                        <div class="panel panel-default col-lg-4 col-md-6 col-sm-12 col-xs-12" id="panel4">
                             <div class="panel-heading" onClick={() => togglePanel(4)}>TOWN AND REGIONAL ​PLANNING</div>
-                            {visiblePanels[4] && ( <div class="panel-body">
+                            {visiblePanels[4] && ( <div class="panel-body" id="panel-body4">
                                 <ul>
                                     <li>Master and Local Planning</li>
                                     <li>Urban Planning and ​Township Establishment</li>
@@ -78,9 +78,9 @@ export const Service = () => {
                             </div>)}
                         </div>
                         {/** Panel 5 */}
-                        <div class="panel panel-default col-lg-4 col-md-6 col-sm-12 col-xs-12">
+                        <div class="panel panel-default col-lg-4 col-md-6 col-sm-12 col-xs-12" id="panel5">
                             <div class="panel-heading" onClick={() => togglePanel(5)}>BENEFICIARY ADMINISTRATION ​AND VERIFICATION</div>
-                            {visiblePanels[5] && (<div class="panel-body">
+                            {visiblePanels[5] && (<div class="panel-body" id="panel-body5">
                                 <ul>
                                     <li>Beneficiary Registrations ​and Approvals</li>
                                     <li>Beneficiary Audit</li>
@@ -89,9 +89,9 @@ export const Service = () => {
                         </div>
 
                         {/** Panel 6 */}
-                        <div class="panel panel-default col-lg-4 col-md-6 col-sm-12 col-xs-12">
+                        <div class="panel panel-default col-lg-4 col-md-6 col-sm-12 col-xs-12" id="panel6">
                             <div class="panel-heading" onClick={() => togglePanel(6)}>QUANTITY SURVEYING</div>
-                            {visiblePanels[6] && ( <div class="panel-body">
+                            {visiblePanels[6] && ( <div class="panel-body" id="panel-body6">
                                 <ul>
                                     <li>Preparations of Bill or ​Schedule of Quantities</li>
                                     <li>Preparations of Payments ​Certificates</li>
@@ -102,9 +102,9 @@ export const Service = () => {
                         </div>
                         
                         {/** Panel 7 */}
-                        <div class="panel panel-default col-lg-4 col-md-6 col-sm-12 col-xs-12">
+                        <div class="panel panel-default col-lg-4 col-md-6 col-sm-12 col-xs-12" id="panel7">
                             <div class="panel-heading" onClick={() => togglePanel(7)}>LAND SURVEYING</div>
-                            {visiblePanels[7] && ( <div class="panel-body">
+                            {visiblePanels[7] && ( <div class="panel-body" id="panel-body7">
                                 <ul>
                                     <li>Cadastral Survey</li>
                                     <li>Topographical Survey</li>
@@ -115,9 +115,9 @@ export const Service = () => {
                             </div>)}
                         </div>
                         {/** Panel 8 */}
-                        <div class="panel panel-default col-lg-4 col-md-6 col-sm-12 col-xs-12">
+                        <div class="panel panel-default col-lg-4 col-md-6 col-sm-12 col-xs-12" id="panel8">
                             <div class="panel-heading" onClick={() => togglePanel(8)}>ENVIROMENTAL ​MANAGEMENT</div>
-                            {visiblePanels[8] && ( <div class="panel-body">
+                            {visiblePanels[8] && ( <div class="panel-body" id="panel-body8">
                                 <ul>
                                     <li>Environmental Impact ​Assessments</li>
                                     <li>Environmental Audits</li>
@@ -128,9 +128,9 @@ export const Service = () => {
                             </div>)}
                         </div>
                         {/** Panel 9 */}
-                        <div class="panel panel-default col-lg-4 col-md-6 col-sm-12 col-xs-12">
+                        <div class="panel panel-default col-lg-4 col-md-6 col-sm-12 col-xs-12" id="panel9">
                             <div class="panel-heading" onClick={() => togglePanel(9)}>Township Registrations</div>
-                            {visiblePanels[9] && ( <div class="panel-body">
+                            {visiblePanels[9] && ( <div class="panel-body" id="panel-body9">
                                 <ul>
                                     <li>Township Registrations</li>
                                     <li>Title deeds Registrations</li>
@@ -140,9 +140,9 @@ export const Service = () => {
                             </div>)}
                         </div>
                         {/** Panel 10 */}
-                        <div class="panel panel-default col-lg-4 col-md-6 col-sm-12 col-xs-12 align-item-center">
+                        <div class="panel panel-default col-lg-4 col-md-6 col-sm-12 col-xs-12 align-item-center" id="panel10">
                             <div class="panel-heading" onClick={() => togglePanel(10)}>ARCHITECTURAL AND URBAN DESIGNS</div>
-                            {visiblePanels[10] && (<div class="panel-body">
+                            {visiblePanels[10] && (<div class="panel-body" id="panel-body10">
                                 <ul>
                                     <li>Building Plans Designs and ​Approvals</li>
                                     <li>Conceptual Designs</li>

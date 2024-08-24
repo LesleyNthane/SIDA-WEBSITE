@@ -321,9 +321,17 @@ nav.navbar.navbar-expand-md.navbar-light {
 .services .panel-body {
   text-align: justify;
   background-color: floralwhite;
-  transition: max-height 15s ease-in-out, opacity 1.5s ease-in-out;
+  transition: max-height 0.7s ease-in-out, opacity 0.7s ease-in-out;
   overflow: hidden;
   animation-duration: 2s;
+}
+
+.services #panel1 {
+  
+}
+
+.services #panel-body1 {
+  transition:ease-in-out;
 }
 
 
