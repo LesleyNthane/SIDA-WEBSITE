@@ -1,0 +1,105 @@
+
+
+/** Services */
+
+.services {
+  background-image: url("../Assets/img/background.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.services .company-name {
+  float: right;
+  font-weight: 200;
+}
+
+.services .title-services {
+  margin-top: 5%;
+  margin-bottom: 5%;
+}
+
+.services-description {
+  text-align: justify;
+  font-size: 120%;
+  margin: 5% 17%;
+}
+
+.services .row #services-panels {
+  align-items:start ;
+  width: 75%;
+  margin-left: 15.5%;
+  padding-top: 0px;
+  margin-bottom: 2%;
+}
+
+.services .panel-default {
+ position: relative;
+ padding-top: 0px;
+ margin-bottom: 4%;
+ transition: all 5s ease-in-out, opacity 5s ease-in-out;
+ animation-duration: 2s;
+}
+
+.panel-body {
+  transition: all 0.3s ease-in-out;
+  opacity: 1;
+}
+
+.panel-body.read {
+  opacity: 0.5;
+}
+
+.services .panel-heading {
+  background-color: transparent;
+  border: none;
+  border-radius: 5px;
+  height:60px;
+  margin-top: 0px;
+  cursor: pointer;
+  box-shadow: -6px -6px 10px #f9f9f9,
+                6px 6px 10px #00000026;
+  transition: height 7s ease-in-out, opacity 7s ease-in-out;
+}
+
+.services .panel-heading:hover {
+  box-shadow: 2px 2px 2px #f9f9f9,
+                -2px -2px 2px #00000026;
+}
+
+.services .panel-body {
+  text-align: justify;
+  border-radius: 5px;
+  background-color: rgba(255, 255, 255, 0.3);
+  transition: height 7s ease-in-out, opacity 7s ease-in-out;
+  overflow: hidden;
+  animation-duration: 2s;
+  box-shadow: -6px -6px 10px #f9f9f9,
+                6px 6px 10px #00000026;
+}
+
+.services #panel-body1 {
+  transition:ease-in-out !important;
+}
+
+.ServiceRequestSection {
+    padding: 5%;
+    border-radius: 10px;
+    box-shadow: -6px -6px 10px #f9f9f9,
+                6px 6px 10px #00000026;
+}
+
+.ServiceRequestButton {
+    background-color: #b5bfc92c;
+    color: rgb(7, 4, 4);
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    cursor: pointer;
+    box-shadow: -6px -6px 10px #f9f9f9,
+                6px 6px 10px #00000026;
+    transition: background-color 0.3s ease;
+}
+
+.ServiceRequestButton:hover {
+    background-color: #b4b9be4b;
+}

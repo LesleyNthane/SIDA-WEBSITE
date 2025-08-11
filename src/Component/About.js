@@ -11,14 +11,9 @@ export const About = () => {
                 <Col xs={12} md={6} xl={7}>
                     <h4 class="company-name">SIDA CONSULTING & PROJECT MANAGEMENT</h4>
                     <h1 class="title-about">About Us</h1>
-                    <div className="row" id="container1">
-                        <div class="col-lg-6 col-md-12 col-sm-12 col-xs-12">
-                            <TrackVisibility >
-                                {({ isVisible }) =>
-                                    <div className={isVisible ? "animate__animated animate__fadeInLeftBig" : ""} id="conp-picture">
-                                        <img src={compServices} alt="company's services picture" />
-                                    </div>}
-                            </TrackVisibility>
+                    <div className="row about-pic-content1" id="container1">
+                        <div class="col-lg-6 col-md-12 col-sm-7 col-xs-7 conp-picture">
+                            <img id="services-picture" src={compServices} alt="company's services picture" />     
                         </div>
                         <div class="col-lg-6 col-md-12 col-sm-12 col-xs-12"  id="aboutContent">
                             <p><b>SIDA Consulting and Project Management</b> is a wholly black owned company ​established in 
@@ -42,7 +37,7 @@ export const About = () => {
                                 the ​market. It is therefore important to rely on experts to handle this important task; 
                                 this ​is where <b>SIDA Consulting and Project Management</b> become instrumental.
                             </p>
-                            <a href="#contact-form"><button class="getInTouch">Get In Touch</button></a>
+                            <a href="#contact-form" className="contact-form-link"><button class="getInTouch">Get In Touch</button></a>
                         </div>
                     </div>
                     <div className="row" id="container2">

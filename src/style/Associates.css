@@ -1,0 +1,57 @@
+/** Associates */
+
+.associates {
+  background-color: white;
+}
+
+.associates .container {
+  align-items: center;
+}
+
+.associates .company-name{
+  float: right;
+  font-weight: 200;
+}
+
+
+.associates .title-associates {
+  margin-top: 5%;
+  margin-bottom: 5%;
+}
+
+.associates #cont1 {
+  margin-bottom: 8%;
+  padding: 2%;
+  border: none;
+  border-radius: 10px;
+  box-shadow: -6px -6px 10px #f9f9f9,
+                6px 6px 10px #00000026;
+}
+
+.associates #cont2 {
+  margin-bottom: 8%;
+  padding: 2%;
+  border: none;
+  border-radius: 10px;
+  box-shadow: -6px -6px 10px #f9f9f9,
+                6px 6px 10px #00000026;
+}
+
+.associates .director-tittle.col-1{
+  font-weight: 500;
+  font-size: 180%;
+}
+
+.associates .partner-h {
+  font-size: 170%
+}
+
+.associates #about-director {
+  text-align: justify;
+  font-size: 120%;
+}
+
+.associates .partner-p1 {
+  text-align: justify;
+  
+}

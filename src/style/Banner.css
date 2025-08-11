@@ -1,0 +1,81 @@
+/** Banner */
+
+.banner {
+  background-image: url("../Assets//img/Sida-pic2.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+}
+
+.banner .animate__animatedanimate__zoomIn {
+  animation-duration: 2s;
+}
+
+.banner-bg {
+  margin-top: 0;
+  padding: 160px 0 100px 55px;
+  
+}
+.banner .container {
+  height: 100%;
+  width: 100%;
+}
+
+.banner h2 {
+  float: left;
+  text-align: left;
+  font-size: 110%;
+  font-weight: 400;
+  margin-bottom: 100px;
+  width: 100%;
+  color:#050c85;
+}
+.banner h1 {
+  text-align: left;
+  font-size: 350%;
+  color: #000000;
+  margin-bottom: 100px;
+}
+
+.banner .getInTouch {
+  background-color: rgba(255, 255, 255, 0.582);
+  border-radius: 5px;
+  text-align: center;
+  font-weight: 600;
+  background-size: cover;
+  margin-top: 22px;
+  float: right;
+  border: none;
+  text-wrap: nowrap;
+  color: rgb(0, 0, 0);
+}
+
+.banner a {
+  margin-bottom: 44px;
+}
+
+.banner button {
+  
+  width: 255px;
+  height: 75px;
+  transition: all 0.5s ease-in-out;
+}
+
+.banner button:hover {
+  background-color: #abacb373;
+}
+
+.stats-panel {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.stats-panel-sub {
+    flex: 1;
+    text-align: center;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.493);
+    border-radius: 10px;
+    margin: 5px 10px;
+}

@@ -24,10 +24,11 @@ export const NavBar = () => {
         setActiveLink(value);
     }
         return (
+            
     
             <Navbar expand="md">
-                <Container className={scrolled ? "scrolled": ""}>
-                    <Navbar.Brand href="#home">
+                <Container className="nav-container">
+                    <Navbar.Brand href="#home" className="nav-logo-link">
                         <img src={logo} alt="Logo" />
                     </Navbar.Brand>
                     <Navbar.Toggle aria-controls="basic-navbar-nav">
@@ -39,9 +40,12 @@ export const NavBar = () => {
                             <Nav.Link href="#about" className={activeLink === 'about' ? 'active navbar-link' : 'navbar-link'} onClick={() => onUpdateActiveLink('about')}>About</Nav.Link>
                             <Nav.Link href="#services" className={activeLink === 'services' ? 'active navbar-link' : 'navbar-link'} onClick={() => onUpdateActiveLink('services')}>Our Services</Nav.Link>
                             <Nav.Link href="#contact" className={activeLink === 'contact' ? 'active navbar-link' : 'navbar-link'} onClick={() => onUpdateActiveLink('contact')}>Contact Us</Nav.Link>
+                            
                         </Nav>
                     </Navbar.Collapse>
+                    <button className="GetQuoteButton">Get a Quote</button>
                 </Container>
             </Navbar>
+            
         )
 }

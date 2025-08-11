@@ -1,160 +1,165 @@
-import { Col, Row } from "react-bootstrap"
-import $ from 'jquery';
+import { Col, Row } from "react-bootstrap";
 import { useState } from "react";
 
 export const Service = () => {
+  const [visiblePanels, setVisiblePanels] = useState({});
 
-    $(document).ready(function() {
-        $(".panel").click(function() {
-            $(".panel-body").toggleClass("read");
-        });
-    });
+  const togglePanel = (panelIndex) => {
+    setVisiblePanels((prev) => ({
+      ...prev,
+      [panelIndex]: !prev[panelIndex],
+    }));
+  };
 
+  const servicesData = [
+    {
+      title: "PROJECT MANAGEMENT ​AND CO-ORDINATION",
+      items: [
+        "Projects Facilitation",
+        "Project Control",
+        "Report Writing",
+        "Institutional Capacity ​Building Projects",
+        "Construction Monitoring ​and Supervision",
+      ],
+    },
+    {
+      title: "ENGINEERING SERVICES",
+      items: [
+        "Civil Engineering",
+        "Structural Engineering",
+        "Electrical Engineering",
+        "Mechanical Engineering",
+      ],
+    },
+    {
+      title: "GEOTECHNICAL ​ENGINEERING",
+      items: [
+        "Geotechnical Site ​Investigations",
+        "Geological Moping",
+        "Geo-hydrology",
+      ],
+    },
+    {
+      title: "TOWN AND REGIONAL ​PLANNING",
+      items: [
+        "Master and Local Planning",
+        "Urban Planning and ​Township Establishment",
+        "Development Feasibility ​Studies",
+        "Township Planning",
+        "Detailed Township Layout ​Design",
+      ],
+    },
+    {
+      title: "BENEFICIARY ADMINISTRATION ​AND VERIFICATION",
+      items: [
+        "Beneficiary Registrations ​and Approvals",
+        "Beneficiary Audit",
+      ],
+    },
+    {
+      title: "QUANTITY SURVEYING",
+      items: [
+        "Preparations of Bill or ​Schedule of Quantities",
+        "Preparations of Payments ​Certificates",
+        "Payments Certifications",
+        "Site Measurements",
+      ],
+    },
+    {
+      title: "LAND SURVEYING",
+      items: [
+        "Cadastral Survey",
+        "Topographical Survey",
+        "Engineering Survey",
+        "Urban/Rural Settlements ​Survey",
+        "Surveyor General Plans ​and Approvals",
+      ],
+    },
+    {
+      title: "ENVIROMENTAL ​MANAGEMENT",
+      items: [
+        "Environmental Impact ​Assessments",
+        "Environmental Audits",
+        "Environmental Screening ​and Scooping",
+        "Environmental Monitoring",
+        "Health and Safety ​management and ​Monitoring",
+      ],
+    },
+    {
+      title: "Township Registrations",
+      items: [
+        "Township Registrations",
+        "Title deeds Registrations",
+        "Conveyance Certificates",
+        "Transfer of Erf’s",
+      ],
+    },
+    {
+      title: "ARCHITECTURAL AND URBAN DESIGNS",
+      items: [
+        "Building Plans Designs and ​Approvals",
+        "Conceptual Designs",
+        "Landscaping",
+        "Mix Developments Designs",
+      ],
+    },
+  ];
 
-    const [visiblePanels, setVisiblePanels] = useState({});
-    const togglePanel = (panelIndex) => {
-        setVisiblePanels((prevVisiblePanels) => ({
-            ...prevVisiblePanels,
-            [panelIndex]: !prevVisiblePanels[panelIndex],
-        }));
-    };
-
-
-    return (
-        <section className="services" id="services">
-            <Row className="align-item-center">
-                <Col xs={12} md={12} xl={12}>
-                    <h4 class="company-name">SIDA CONSULTING & PROJECT MANAGEMENT</h4>
-                    <h1 class="title-services">Our Services</h1>
-                    <div className="row" id="services-panels">
-                        {/** Panel 1 */}
-                        <div class="panel panel-default col-lg-4 col-md-6 col-sm-12 col-xs-12" id="panel1">
-                            <div class="panel-heading" onClick={() => togglePanel(1)}>PROJECT MANAGEMENT ​AND CO-ORDINATION</div>
-                            {visiblePanels[1] && ( <div class="panel-body" id="panel-body1">
-                                <ul>
-                                    <li>Projects Facilitation</li>
-                                    <li>Project Control</li>
-                                    <li>Report Writing</li>
-                                    <li>Institutional Capacity ​Building Projects</li>
-                                    <li>Construction Monitoring ​and Supervision</li>
-                                </ul>
-                            </div>)}
-                        </div>
-                    
-                        {/** Panel 2 */}
-                        <div class="panel panel-default col-lg-4 col-md-6 col-sm-12 col-xs-12" id="panel2">
-                            <div class="panel-heading" onClick={() => togglePanel(2)}>ENGINEERING SERVICES</div>
-                            {visiblePanels[2] && ( <div class="panel-body" id="panel-body2">
-                                <ul>
-                                    <li>Civil Engineering</li>
-                                    <li>Structural Engineering</li>
-                                    <li>Electrical Engineering</li>
-                                    <li>Mechanical Engineering</li>
-                                </ul>
-                            </div>)}
-                        </div>
-                        {/** Panel 3 */}
-                        <div class="panel panel-default col-lg-4 col-md-6 col-sm-12 col-xs-12" id="panel3">
-                            <div class="panel-heading" onClick={() => togglePanel(3)}>GEOTECHNICAL ​ENGINEERING</div>
-                            {visiblePanels[3] && ( <div class="panel-body" id="panel-body3">
-                                <ul>
-                                    <li>Geotechnical Site ​Investigations</li>
-                                    <li>Geological Moping</li>
-                                    <li>Geo-hydrology</li>
-                                </ul>
-                            </div>)}
-                        </div>
-                        {/** Panel 4 */}
-                        <div class="panel panel-default col-lg-4 col-md-6 col-sm-12 col-xs-12" id="panel4">
-                            <div class="panel-heading" onClick={() => togglePanel(4)}>TOWN AND REGIONAL ​PLANNING</div>
-                            {visiblePanels[4] && ( <div class="panel-body" id="panel-body4">
-                                <ul>
-                                    <li>Master and Local Planning</li>
-                                    <li>Urban Planning and ​Township Establishment</li>
-                                    <li>Development Feasibility ​Studies</li>
-                                    <li>Township Planning</li>
-                                    <li>Detailed Township Layout ​Design</li>
-                                </ul>
-                            </div>)}
-                        </div>
-                        {/** Panel 5 */}
-                        <div class="panel panel-default col-lg-4 col-md-6 col-sm-12 col-xs-12" id="panel5">
-                            <div class="panel-heading" onClick={() => togglePanel(5)}>BENEFICIARY ADMINISTRATION ​AND VERIFICATION</div>
-                            {visiblePanels[5] && (<div class="panel-body" id="panel-body5">
-                                <ul>
-                                    <li>Beneficiary Registrations ​and Approvals</li>
-                                    <li>Beneficiary Audit</li>
-                                </ul>
-                            </div>)}
-                        </div>
-
-                        {/** Panel 6 */}
-                        <div class="panel panel-default col-lg-4 col-md-6 col-sm-12 col-xs-12" id="panel6">
-                            <div class="panel-heading" onClick={() => togglePanel(6)}>QUANTITY SURVEYING</div>
-                            {visiblePanels[6] && ( <div class="panel-body" id="panel-body6">
-                                <ul>
-                                    <li>Preparations of Bill or ​Schedule of Quantities</li>
-                                    <li>Preparations of Payments ​Certificates</li>
-                                    <li>Payments Certifications</li>
-                                    <li>Site Measurements</li>
-                                </ul>
-                            </div>)}
-                        </div>
-                        
-                        {/** Panel 7 */}
-                        <div class="panel panel-default col-lg-4 col-md-6 col-sm-12 col-xs-12" id="panel7">
-                            <div class="panel-heading" onClick={() => togglePanel(7)}>LAND SURVEYING</div>
-                            {visiblePanels[7] && ( <div class="panel-body" id="panel-body7">
-                                <ul>
-                                    <li>Cadastral Survey</li>
-                                    <li>Topographical Survey</li>
-                                    <li>Engineering Survey</li>
-                                    <li>Urban/Rural Settlements ​Survey</li>
-                                    <li>Surveyor General Plans ​and Approvals</li>
-                                </ul>
-                            </div>)}
-                        </div>
-                        {/** Panel 8 */}
-                        <div class="panel panel-default col-lg-4 col-md-6 col-sm-12 col-xs-12" id="panel8">
-                            <div class="panel-heading" onClick={() => togglePanel(8)}>ENVIROMENTAL ​MANAGEMENT</div>
-                            {visiblePanels[8] && ( <div class="panel-body" id="panel-body8">
-                                <ul>
-                                    <li>Environmental Impact ​Assessments</li>
-                                    <li>Environmental Audits</li>
-                                    <li>Environmental Screening ​and Scooping</li>
-                                    <li>Environmental Monitoring</li>
-                                    <li>Health and Safety ​management and ​Monitoring</li>
-                                </ul>
-                            </div>)}
-                        </div>
-                        {/** Panel 9 */}
-                        <div class="panel panel-default col-lg-4 col-md-6 col-sm-12 col-xs-12" id="panel9">
-                            <div class="panel-heading" onClick={() => togglePanel(9)}>Township Registrations</div>
-                            {visiblePanels[9] && ( <div class="panel-body" id="panel-body9">
-                                <ul>
-                                    <li>Township Registrations</li>
-                                    <li>Title deeds Registrations</li>
-                                    <li>Conveyance Certificates</li>
-                                    <li>Transfer of Erf’s</li>
-                                </ul>
-                            </div>)}
-                        </div>
-                        {/** Panel 10 */}
-                        <div class="panel panel-default col-lg-4 col-md-6 col-sm-12 col-xs-12 align-item-center" id="panel10">
-                            <div class="panel-heading" onClick={() => togglePanel(10)}>ARCHITECTURAL AND URBAN DESIGNS</div>
-                            {visiblePanels[10] && (<div class="panel-body" id="panel-body10">
-                                <ul>
-                                    <li>Building Plans Designs and ​Approvals</li>
-                                    <li>Conceptual Designs</li>
-                                    <li>Landscaping</li>
-                                    <li>Mix Developments Designs</li>
-                                </ul>
-                            </div>)}
-                        </div>
-                    </div>
-                    
-                </Col>
-            </Row>
-        </section>
-    )
-}
+  return (
+    <section className="services" id="services">
+      <Row className="align-item-center">
+        <Col xs={12}>
+          <h4 className="company-name">SIDA CONSULTING & PROJECT MANAGEMENT</h4>
+          <h1 className="title-services">Our Services</h1>
+          <p className="services-description">
+            With over 25 years of excellence in construction and tender
+            management, we have established ourselves as a trusted partner
+            for complex projects across multiple sectors.
+          </p>
+          <div className="row" id="services-panels">
+            <p>Click Title to view more info</p>
+            {servicesData.map((service, index) => (
+              <div
+                key={index}
+                className="panel panel-default col-lg-4 col-md-6 col-sm-12 col-xs-12"
+              >
+                <div
+                  className="panel-heading"
+                  onClick={() => togglePanel(index)}
+                  style={{ cursor: "pointer" }}
+                >
+                  {service.title}
+                </div>
+                {visiblePanels[index] && (
+                  <div className="panel-body">
+                    <ul>
+                      {service.items.map((item, idx) => (
+                        <li key={idx}>{item}</li>
+                      ))}
+                    </ul>
+                  </div>
+                )}
+              </div>
+            ))}
+            <div className="ServiceRequestSection">
+                <h3 className="text-2xl font-bold text-foreground mb-4">
+                Ready to Start Your Project?
+                </h3>
+                <p className="text-muted-foreground mb-6 max-w-2xl mx-auto">
+                Contact our expert team to discuss your construction needs and discover 
+                how we can deliver exceptional results for your next project.
+                </p>
+                <div className="flex flex-col sm:flex-row gap-4 justify-center">
+                <a href="#contact">
+                    <button className="ServiceRequestButton">
+                        Request Consultation
+                    </button>
+                </a>
+                </div>
+            </div>
+          </div>
+        </Col>
+      </Row>
+    </section>
+  );
+};
