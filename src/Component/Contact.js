@@ -30,7 +30,9 @@ export const Contact = () => {
 
     const [formDetails, setFormDetails] = useState(formInitialDetails);
     const [buttonText, setButtonText] = useState('Send');
-    const [status, setStatus] = useState({});
+    //const [status, setStatus] = useState({});
+    const [loading, setLoading] = useState(false);
+    const [status, setStatus] = useState({ success: false, message: "" });
 
     const contactInfo = [
         {
@@ -85,31 +87,39 @@ export const Contact = () => {
 
     const onSubmit = async (event) => {
         event.preventDefault();
+        setLoading(true);
+
         const formData = new FormData(event.target);
-    
-        formData.append("access_key", "2e339ec8-3fec-476e-94db-b4f9fa2fc861");
-    
+        formData.append("access_key", process.env.REACT_APP_WEB3FORM_KEY);
+
         const object = Object.fromEntries(formData);
         const json = JSON.stringify(object);
-    
-        const res = await fetch("https://api.web3forms.com/submit", {
-          method: "POST",
-          headers: {
-            "Content-Type": "application/json",
-            Accept: "application/json"
-          },
-          body: json
-        }).then((res) => res.json());
-    
-        setFormDetails(formInitialDetails);
 
-        if (res.success) {
-          console.log("Success", res);
-          setStatus({ success: true, message: 'Message sent successfully' });
-        }else {
-            setStatus({ success: false, message: 'Something went wrong, please try again later.' });
+        try {
+            const res = await fetch("https://api.web3forms.com/submit", {
+            method: "POST",
+            headers: {
+                "Content-Type": "application/json",
+                Accept: "application/json"
+            },
+            body: json
+            });
+
+            const data = await res.json();
+
+            if (data.success) {
+            setStatus({ success: true, message: "Message sent successfully." });
+            event.target.reset();
+            } else {
+            setStatus({ success: false, message: "Something went wrong. Please try again." });
+            }
+        } catch (error) {
+            console.error("Form submission error:", error);
+            setStatus({ success: false, message: "Network error. Please try again later." });
+        } finally {
+            setLoading(false);
         }
-      };
+    };
 
 
     return (
