@@ -66,9 +66,42 @@
   }
 }
 
+/*** Loading **/
 
+.loading-div {
+  background-color: #0e0e0fa4;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 9999;
+  pointer-events: all;
+  pointer-events: all; /* capture clicks */
+}
 
+.loading-p {
+  font-size: larger;
+  color: white;
+}
 
+.spinner {
+  width: 60px;
+  height: 60px;
+  border: 6px solid #ddd;
+  border-top: 6px solid #3498db; /* blue accent */
+  border-radius: 50%;
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  100% {
+    transform: rotate(360deg);
+  }
+}
 
 /** Contact */
 .contact {
@@ -122,14 +155,6 @@
   align-items: center;
 }
 
-.contact .input-box {
-  
-}
-
-.contact #input-boxes {
-  
-}
-
 .contact #input-boxes label {
   float: left;
   text-wrap: nowrap;
@@ -139,10 +164,6 @@
   background-color: transparent;
   border:groove rgb(109, 106, 106) 0.5px;
   border-radius: 5px;
-}
-
-.contact #text-area1 {
-  
 }
 
 #textarea-message {
@@ -159,10 +180,6 @@
   box-shadow: -6px -6px 10px #f9f9f9,
                 6px 6px 10px #00000026;
   background-color: transparent;
-}
-
-.contact-items {
-
 }
 
 .icon-head-contact {
@@ -293,11 +310,5 @@
   .conp-picture {
     width: 385px !important;
   }
-
-  .contact-item {
- 
-  }
-
-
   
 }

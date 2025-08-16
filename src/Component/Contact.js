@@ -7,6 +7,7 @@ import logo from '../Assets/img/SIDA-LOGO.png';
 import pic1 from '../Assets/img/Sida-const-pic-1.jpg';
 import pic2 from '../Assets/img/Sida-const-pic-3.jpg';
 import pic3 from '../Assets/img/Sida-const-pic-4.jpg';
+import { Loading } from './Loading.js'
 import { 
   MapPin, 
   Phone, 
@@ -46,7 +47,7 @@ export const Contact = () => {
         details: ["+27 (12) 004 1271", "+27 (12) 004 1274",  " "]
         },
         {
-        icon: Send,
+        icon: Mail,
         title: "Email Addresses",
         details: ["info@sidaconsulting.com"]
         },
@@ -109,13 +110,23 @@ export const Contact = () => {
 
             if (data.success) {
             setStatus({ success: true, message: "Message sent successfully." });
+            setFormDetails(formInitialDetails);
             event.target.reset();
+            setTimeout(() => {
+                setStatus({ success: null, message: "" });
+            }, 5000);
             } else {
             setStatus({ success: false, message: "Something went wrong. Please try again." });
+            setTimeout(() => {
+                setStatus({ success: null, message: "" });
+            }, 15000);
             }
         } catch (error) {
             console.error("Form submission error:", error);
             setStatus({ success: false, message: "Network error. Please try again later." });
+            setTimeout(() => {
+                setStatus({ success: null, message: "" });
+            }, 5000);
         } finally {
             setLoading(false);
         }
@@ -138,7 +149,7 @@ export const Contact = () => {
                         <h3 className="contact-head3">Send Us a Message...</h3>
                         <div className="col-xs-12 col-sm-12 col-md-6 col-lg-6 input-box">
                             <label className="col-1">Full Name</label><br />
-                            <input type="text" name="fullName" value={formDetails.firstName} className="col-12 field" placeholder="Enter your name" onChange={(e) => onFormUpdate('fullName', e.target.value)} required />
+                            <input type="text" name="fullName" value={formDetails.fullName} className="col-12 field" placeholder="Enter your name" onChange={(e) => onFormUpdate('fullName', e.target.value)} required />
                         </div>
                         <div className="col-xs-12 col-sm-12 col-md-6 col-lg-6 input-box">
                             <label className="col-1">Phone Number</label><br />
@@ -185,6 +196,9 @@ export const Contact = () => {
                         ))}
                     </div>
                 </div>
+                {loading &&
+                    <Loading />
+                }
             </div>
             <div className="row" id="bottom-div">
                 <div className="col-4">
@@ -217,6 +231,9 @@ export const Contact = () => {
                     <p>SIDA CONSULTING AND PROJECT MANAGEMENT (PTY) LTD 2012/017803/07</p>
                 </div>
             </div>
+            
+                
+            
         </section>
     )
 }
