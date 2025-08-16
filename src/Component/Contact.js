@@ -48,7 +48,7 @@ export const Contact = () => {
         {
         icon: Send,
         title: "Email Addresses",
-        details: ["johnr@sidaconsulting.com", "hlamalani@sidaconsulting.com", " "]
+        details: ["info@sidaconsulting.com"]
         },
         {
         icon: Clock,
@@ -61,19 +61,19 @@ export const Contact = () => {
         {
         icon: Building2,
         title: "Project Inquiries",
-        email: "johnr@sidaconsulting.com",
+        email: "info@sidaconsulting.com",
         description: "General construction and development projects"
         },
         {
         icon: FileText,
         title: "Tender Submissions",
-        email: "tenders@constructpro.com",
+        email: "info@sidaconsulting.com",
         description: "Tender opportunities and bid submissions"
         },
         {
         icon: Users,
         title: "Partnerships",
-        email: "partnerships@constructpro.com",
+        email: "info@sidaconsulting.com",
         description: "Strategic partnerships and collaborations"
         }
     ];
@@ -204,7 +204,7 @@ export const Contact = () => {
                     <label>012 004 1271</label>
                 </div>
                 <div className="col-4 info1">
-                    <label>johnr@sidaconsulting.com</label>
+                    <label>info@sidaconsulting.com</label>
                 </div>
                 <div className="col-4 info1">
                     <label>Office suite 4b, futurum office park <br />251 lenchen avenue <br />Centurion , 0157</label>
