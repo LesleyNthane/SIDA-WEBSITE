@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/SIDA-WEBSITE/static/css/main.d67278e3.css",
-    "main.js": "/SIDA-WEBSITE/static/js/main.65abe75a.js",
+    "main.css": "/SIDA-WEBSITE/static/css/main.1560d3af.css",
+    "main.js": "/SIDA-WEBSITE/static/js/main.d6e74bb9.js",
     "static/js/453.777e34bc.chunk.js": "/SIDA-WEBSITE/static/js/453.777e34bc.chunk.js",
     "static/media/background.png": "/SIDA-WEBSITE/static/media/background.2b749204a3f04cb42d32.png",
     "static/media/SIDA-LOGO.png": "/SIDA-WEBSITE/static/media/SIDA-LOGO.4bca600cc7e2746f023b.png",
@@ -15,12 +15,12 @@
     "static/media/CentraNo2-Book.ttf": "/SIDA-WEBSITE/static/media/CentraNo2-Book.2b143fa4b734a3584043.ttf",
     "static/media/logo.svg": "/SIDA-WEBSITE/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
     "index.html": "/SIDA-WEBSITE/index.html",
-    "main.d67278e3.css.map": "/SIDA-WEBSITE/static/css/main.d67278e3.css.map",
-    "main.65abe75a.js.map": "/SIDA-WEBSITE/static/js/main.65abe75a.js.map",
+    "main.1560d3af.css.map": "/SIDA-WEBSITE/static/css/main.1560d3af.css.map",
+    "main.d6e74bb9.js.map": "/SIDA-WEBSITE/static/js/main.d6e74bb9.js.map",
     "453.777e34bc.chunk.js.map": "/SIDA-WEBSITE/static/js/453.777e34bc.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.d67278e3.css",
-    "static/js/main.65abe75a.js"
+    "static/css/main.1560d3af.css",
+    "static/js/main.d6e74bb9.js"
   ]
 }
