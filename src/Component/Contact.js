@@ -226,7 +226,7 @@ export const Contact = () => {
                 <div className="col-3">
                     <img src={logo} alt="logo" />
                 </div>
-                <p className="copyrights">Copy rights reserved. Designed & Developed by L Nthane 2024</p>
+                <p className="copyrights">Copy rights reserved. SIDA CONSULTING & PROJECT MANAGEMENT 2024</p>
                 <div className="col-12 bottomn">
                     <p>SIDA CONSULTING AND PROJECT MANAGEMENT (PTY) LTD 2012/017803/07</p>
                 </div>
